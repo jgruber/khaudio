@@ -38,7 +38,7 @@ Assembly is pretty obvious :smile:
 
 ![Assembled KHAudio](./resources/khaudiopi.jpg)
 
-### Qucikstart Installation ###
+### Quickstart Installation ###
 
 There are two disk image variants available for KHAudio.
 
