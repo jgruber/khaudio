@@ -1,6 +1,6 @@
 ## KHAudio Streaming Device ##
 
-KHAudio Streaming Device is a Raspberry Pi software appliance which takes an audio feed from your mixer and allows for manual or scheduled initiation of mp3 audio streams to *khstreamer.org* and SIP VOIP (voice over IP - Internet based phone calls) calls to *khconf.com* phone conferencing.
+The KHAudio Streaming Device is a Raspberry Pi software appliance which takes an audio feed from your mixer and allows for manual or scheduled initiation of mp3 audio streams to *khstreamer.org* and SIP VOIP (voice over IP - Internet based phone calls) calls to *khconf.com* phone conferencing.
 
 The appliance uses a USB audio interface to take input from your mixer. The input signal is then redirected to the output of the USB audio inteface such that in can be used locally by another application, like FM broadcast transmission.
 
@@ -34,7 +34,7 @@ You'll need a microSD card, 8GB or larger suggested.
 
 [A Cheap microSD card on Amazon](https://www.amazon.com/Sandisk-Ultra-Micro-UHS-I-Adapter/dp/B073K14CVB)
 
-Assembly is prety obvious :smile:
+Assembly is pretty obvious :smile:
 
 ![Assembled KHAudio](./resources/khaudiopi.jpg)
 
