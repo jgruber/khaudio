@@ -78,7 +78,7 @@ If neither of these work with your Internet provider or web client, you will can
 
 It is recommended that you reserve the DHCP lease address in your DHCP service setup, allowing the KHAudio device to retrieve the same IP address each time it requests a lease renewal. You will also want to increase the lease period for the KHAudio appliance to as long as possible (typically 24h - 86400 seconds). Both of these precations will avoid the KHAudio appliance changing address and interupting service during a meeting.
 
-If you require static address allocation for your facility, the instructions for manually configuring the `/etc/dhcpcd.conf` file for raspbian strech images can be followed. Please create an github issue with your email address for the password of the `pi` user account, it has been changed from the default.
+If you require static address allocation for your facility, the instructions for manually configuring the `/etc/dhcpcd.conf` file for raspbian strech images can be followed. Please create a github issue with your email address for the password of the `pi` user account, it has been changed from the default.
 
 ### Using the Web User Interface ###
 
