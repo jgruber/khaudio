@@ -52,7 +52,7 @@ When you power up the KHAudio appliance you will see a WiFi SSID labeled `KH Aud
 
 [http://10.0.0.1](http://10.0.0.1)
 
-You will be presented with an interface that will let you provision your Wifi networking.
+You will be presented with an interface that will let you provision your networking.
 
 ![KHAudio Wifi Setup](resources/khaudio_wifisetup.png)
 
