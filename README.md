@@ -58,7 +58,7 @@ You will be presented with an interface that will let you provision your network
 
 #### Static Address Configuration ####
 
-*It is strongly suggested that you give the KHAudio appliance a static network address suitable for your facility. You can do this by clicking on the `static address configuration` link on the page above. From that link you will be asked if you want to use Wired Ethernet networking or WiFi Networking, the static IP address, the gateway address, and a DNS server address. If you choose Wired Ethernet networking, your static address configuration will be accepted and your KHAudio appliance will reboot. If you choose WiFi networking your browser will return to the main page to enable you to select your WiFi network and provide the appropriate security configuration. Once configured you can simply open a web browser to:*
+*It is strongly suggested that you give the KHAudio appliance a static network address suitable for your facility. You can do this by clicking on the `static address configuration` link on the page above. From that link you will be asked if you want to use Wired Ethernet networking or WiFi networking, the static IP address, the gateway address, and a DNS server address. If you choose Wired Ethernet networking, your static address configuration will be accepted and your KHAudio appliance will reboot. If you choose WiFi networking your browser will return to the main page to enable you to select your WiFi network and provide the appropriate security configuration. Once configured you can simply open a web browser to:*
 
 `http://[static_address]`
 
