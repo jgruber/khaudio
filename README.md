@@ -62,6 +62,8 @@ You will be presented with an interface that will let you provision your network
 
 http://192.168.1.5
 
+It is recommended that you statically configure a DNS address entry for the KHAudio appliance, allowing it to be referenced by name.
+
 If your web browser's operating system is capable of using mDNS, the KHAudio appliance can be discovered with the name:
 
 [http://khaudio.local](http://khaudio.local)
