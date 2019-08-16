@@ -42,9 +42,9 @@ Assembly is pretty obvious :smile:
 
 [Download the KHAudio image (click here)](https://www.dropbox.com/s/tv3gnztc56gjlrv/khaudio.img?dl=1)
 
-Once you download one of the disk images, simply follow the [Raspberry Pi Foundation's instructions](https://www.raspberrypi.org/documentation/installation/installing-images/) for *Writing an image to the SD card*.
+Once you download the disk images, simply follow the [Raspberry Pi Foundation's instructions](https://www.raspberrypi.org/documentation/installation/installing-images/) for *Writing an image to the SD card*.
 
-Once the disk image has been downloaded and written to your microSD card, insert the microSD card into your Raspberry Pi and plug it in!
+When the disk image has been downloaded and written to your microSD card, insert the microSD card into your Raspberry Pi and plug it in!
 
 ### Connecting the Raspberry Pi to your Network ###
 
