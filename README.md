@@ -68,7 +68,9 @@ If your web browser's operating system is capable of using mDNS, the KHAudio app
 
 #### Dynamic Address Configuration ####
 
-If you can not provide a static address, the KHAudio appliance will request a DHCP lease identifying itself with the name `khaudio`. If your DHCP and DNS services are tied together (common for Internet service provider DHCP/DNS services), you can simply open a web browser and go the following address:
+If you can not provide a static address, provision your Wifi (or simply plug in the wired Ethernet connection).
+
+The KHAudio appliance will request a DHCP lease identifying itself with the name `khaudio`. If your DHCP and DNS services are tied together (common for Internet service provider DHCP/DNS services), you can simply open a web browser and go the following address:
 
 [http://khaudio](http://khaudio)
 
