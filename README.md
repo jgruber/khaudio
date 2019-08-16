@@ -54,7 +54,7 @@ If you chose to use wired Ethernet networking, you'll want to plug in the Ethern
 
 ### Connecting the Raspberry Pi to your Wifi Network ###
 
-If you wrote the [disk image to use with Wifi networking](https://www.dropbox.com/s/225kfyo86321opv/khaudio_wifi.img?dl=1), when you power up the KHAudio appliance you eventually see a Wifi SSID labeled `KH Audio Wireless Setup`. Connect to this Wifi access point, then open a web browser to the following address:
+If you wrote the [disk image to use with Wifi networking](https://www.dropbox.com/s/225kfyo86321opv/khaudio_wifi.img?dl=1), to your microSD card, when you power up the KHAudio appliance you will see a Wifi SSID labeled `KH Audio Wireless Setup`. Connect to this Wifi access point, then open a web browser to the following address:
 
 [http://10.0.0.1](http://10.0.0.1)
 
@@ -64,14 +64,19 @@ You will be presented with an interface that will let you provision your Wifi ne
 
 ### Discovering the KHAudio device on your Network ###
 
-The KHAudio device will request a DHCP lease with the name `khaudio`. If you DHCP and DNS services are tied together (common for Internet service provider DHCP/DNS services), you might simply be able to open a browser and go the following address:
+The KHAudio device will request a DHCP lease identifying itself with the name `khaudio`. If your DHCP and DNS services are tied together (common for Internet service provider DHCP/DNS services), you can simply open a web browser and go the following address:
 
 [http://khaudio](http://khaudio)
 
-If not, you will can get the address allocated by your network by looking at your DHCP service connected clients/leases list. Look for `khaudio`. You can then open a web brower to that address. As an example if your DHCP service shows the `khaudio` device on address `192.168.1.45` you would open a browser to the following address:
+If your web browser's operating system is capable of using mDNS, the KHAudio appliance can be discovered with the name:
+
+[http://khaudio.local](http://khaudio.local)
+
+If neither of these work with your Internet provider or web client, you will can get the address allocated by your network by consulting your DHCP service connected clients/leases list. Look for `khaudio`. You can determine the IP address allocated from that list. Once you have the IP address, open a web brower to that address. As an example if your DHCP service shows the `khaudio` device was allocated the address `192.168.1.45`, you would open a browser to the following address:
 
 `http://192.168.1.45`
 
+It is recommended that you reserve the DHCP lease address in your DHCP service setup, allowing the KHAudio device to retrieve the same IP address each time it requests a lease renewal. You will also want to increase the lease period for the KHAudio appliance to as long as possible (typically 24h - 86400 seconds). Both of these precations will avoid the KHAudio appliance changing address and interupting service during a meeting. 
 
 ### Using the Web User Interface ###
 
