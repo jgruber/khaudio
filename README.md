@@ -40,21 +40,15 @@ Assembly is pretty obvious :smile:
 
 ### Quickstart Installation ###
 
-There are two disk image variants available for KHAudio.
-
-[Download disk image for use with Wifi networking](https://www.dropbox.com/s/225kfyo86321opv/khaudio_wifi.img?dl=1)
-
-[Download disk image for wired Ethernet networking](https://www.dropbox.com/s/5rm9dstu340z8jq/khaudio_wired.img?dl=1)
+[Download the KHAudio image (click here)](https://www.dropbox.com/s/tv3gnztc56gjlrv/khaudio.img?dl=1)
 
 Once you download one of the disk images, simply follow the [Raspberry Pi Foundation's instructions](https://www.raspberrypi.org/documentation/installation/installing-images/) for *Writing an image to the SD card*.
 
 Once the disk image has been downloaded and written to your microSD card, insert the microSD card into your Raspberry Pi and plug it in!
 
-If you chose to use wired Ethernet networking, you'll want to plug in the Ethernet cable to your Raspberry Pi as well.
+### Connecting the Raspberry Pi to your Network ###
 
-### Connecting the Raspberry Pi to your Wifi Network ###
-
-If you wrote the [disk image to use with Wifi networking](https://www.dropbox.com/s/225kfyo86321opv/khaudio_wifi.img?dl=1), to your microSD card, when you power up the KHAudio appliance you will see a Wifi SSID labeled `KH Audio Wireless Setup`. Connect to this Wifi access point, then open a web browser to the following address:
+When you power up the KHAudio appliance you will see a WiFi SSID labeled `KH Audio Wireless Setup`. Connect to this Wifi access point, then open a web browser to the following address:
 
 [http://10.0.0.1](http://10.0.0.1)
 
@@ -62,9 +56,19 @@ You will be presented with an interface that will let you provision your Wifi ne
 
 ![KHAudio Wifi Setup](resources/khaudio_wifisetup.png)
 
-### Discovering the KHAudio device on your Network ###
+#### Static Address Configuration ####
 
-The KHAudio device will request a DHCP lease identifying itself with the name `khaudio`. If your DHCP and DNS services are tied together (common for Internet service provider DHCP/DNS services), you can simply open a web browser and go the following address:
+*It is strongly suggested that you give the KHAudio appliance a static network address suitable for your facility. You can do this by clicking on the `static address configuration` link on the page above. From that link you will be asked if you want to use Wired Ethernet networking or WiFi Networking, the static IP address, the gateway address, and a DNS server address. If you choose Wired Ethernet networking, your static address configuration will be accepted and your KHAudio appliance will reboot. If you choose WiFi networking your browser will return to the main page to enable you to select your WiFi network and provide the appropriate security configuration. Once configured you can simply open a web browser to:*
+
+`http://[static_address]`
+
+If your web browser's operating system is capable of using mDNS, the KHAudio appliance can be discovered with the name:
+
+[http://khaudio.local](http://khaudio.local)
+
+#### Dynamic Address Configuration ####
+
+If you can not provide a static address, the KHAudio appliance will request a DHCP lease identifying itself with the name `khaudio`. If your DHCP and DNS services are tied together (common for Internet service provider DHCP/DNS services), you can simply open a web browser and go the following address:
 
 [http://khaudio](http://khaudio)
 
@@ -77,8 +81,6 @@ If neither of these work with your Internet provider or web client, you will can
 `http://192.168.1.45`
 
 It is recommended that you reserve the DHCP lease address in your DHCP service setup, allowing the KHAudio device to retrieve the same IP address each time it requests a lease renewal. You will also want to increase the lease period for the KHAudio appliance to as long as possible (typically 24h - 86400 seconds). Both of these precations will avoid the KHAudio appliance changing address and interupting service during a meeting.
-
-If you require static address allocation for your facility, the instructions for manually configuring the `/etc/dhcpcd.conf` file for raspbian strech images can be followed. Please create a github issue with your email address for the password of the `pi` user account, it has been changed from the default.
 
 ### Using the Web User Interface ###
 
