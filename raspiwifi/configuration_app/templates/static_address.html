@@ -1,0 +1,33 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+<div id="mainContent">
+<h1>Static Address Setup</h1>
+<p>
+<form action="/save_static_address" method=post>
+    <ul>
+      <li><label for="interface">Select your Interface</label></li>
+
+      <li class="wifiNetwork">
+        <select id="interface" name="interface", class="wifiNetworkInputs">
+          <option value="eth0">Wired Ethernet</option>
+          <option value="wlan0">WiFi Network</option>
+        </select>
+      </li>
+
+      <li><label for="ip_address">IP Address</label></li>
+      <li><input type="text" name="ip_address", class="wifiNetworkInputs" placeholder="192.168.1.10/24" ></li>
+
+      <li><label for="routers">Default Route</label></li>
+      <li><input type="text" name="routers", class="wifiNetworkInputs" placeholder="192.168.1.1"></li>
+
+      <li><label for="domain_name_servers">DNS Server</label></li>
+      <li><input type="text" name="domain_name_servers", class="wifiNetworkInputs" placeholder="192.168.1.1"></li>
+
+      <input type="submit", class="wifiConnectButton">
+    </ul>
+</form>
+</p>
+</div>
+
+{% endblock %}
