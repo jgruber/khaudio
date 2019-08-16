@@ -12,11 +12,11 @@ The effected signal is then made available to the internal mp3 streaming and SIP
 
 Obviously you will need Internet access and the KHAudio appliance will need access to the services through your firewall.
 
-A scheduling application, running on the KHAudio appliance, monitors any configured meeting times and will automatically start and then stop enabled service client applications, thus removing the need to manually connect a phone or a mp3 streaming client to your configured services.
+A scheduling application, running on the KHAudio appliance, monitors any configured meeting times and will automatically start and then stop enabled service client applications, thus removing the need to manually connect a phone or an mp3 streaming client to your configured services.
 
 The KHAudio appliance can be configured to support multiple congregation meeting schedules. The KHAudio appliance hosts a web user interface to schedule meetings, manually start or stop mp3 streams and SIP VOIP calls, and retrieve *khconf* caller counts (if a *khconf* count user is configured).
 
-A single KHAudio appliance can have one mp3 streaming and one SIP VOIP client running at a time. A single congregation can use both mp3 streaming and phone conferencing for the same meeting, but if you want to simultaneously connect to multiple mp3 streams or multiple phone conferences for the same meeting, you will need to build mulitple KHAudio appliances.
+A single KHAudio appliance can have one mp3 streaming client and one SIP VOIP client running at the same time. A single congregation can use both mp3 streaming and phone conferencing for the same meeting, but if you want to simultaneously connect to multiple mp3 streams or multiple phone conferences for the same meeting, you will need to build mulitple KHAudio appliances.
 
 ### What Hardware to Buy ###
 
