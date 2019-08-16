@@ -78,7 +78,7 @@ If your web browser's operating system is capable of using mDNS, the KHAudio app
 
 [http://khaudio.local](http://khaudio.local)
 
-If neither of these work with your Internet provider or web client, you will need to get the address allocated by your network by consulting your DHCP service connected clients/leases list. Look for `khaudio`. You can determine the IP address allocated from that list. Once you have the IP address, open a web brower to that address. As an example if your DHCP service shows the `khaudio` device was allocated the address `192.168.1.45`, you would open a browser to the following address:
+If neither of these work with your Internet provider or web client, you will need to get the address allocated by your network by consulting your DHCP service connected clients/leases list. Look for `khaudio`. You can determine the IP address allocated from that list. Once you have the IP address, open a web brower to that address. As an example, if your DHCP service shows the `khaudio` device was allocated the address `192.168.1.45`, you would open a browser to the following address:
 
 `http://192.168.1.45`
 
