@@ -76,7 +76,9 @@ If neither of these work with your Internet provider or web client, you will can
 
 `http://192.168.1.45`
 
-It is recommended that you reserve the DHCP lease address in your DHCP service setup, allowing the KHAudio device to retrieve the same IP address each time it requests a lease renewal. You will also want to increase the lease period for the KHAudio appliance to as long as possible (typically 24h - 86400 seconds). Both of these precations will avoid the KHAudio appliance changing address and interupting service during a meeting. 
+It is recommended that you reserve the DHCP lease address in your DHCP service setup, allowing the KHAudio device to retrieve the same IP address each time it requests a lease renewal. You will also want to increase the lease period for the KHAudio appliance to as long as possible (typically 24h - 86400 seconds). Both of these precations will avoid the KHAudio appliance changing address and interupting service during a meeting.
+
+If you require static address allocation for your facility, please contact *khstreamer* and an image pre-configured with our requiremetns can be created. Note: *khstreamer* no charge accounts are by referral only.
 
 ### Using the Web User Interface ###
 
